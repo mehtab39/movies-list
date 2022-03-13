@@ -14,7 +14,7 @@ export const Favorites = $ =>{
    
     
     return favorites.length ? <main>
-        {uniqueObject(favorites).map(movie=>{
+        {uniqueObject(favorites)?.map(movie=>{
          const { title, poster_path, vote_average, overview } = movie;
          return <div className="movie">
           <img id="mainimg" src={IMG_URL + poster_path} alt={title}/>

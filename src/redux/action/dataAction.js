@@ -44,8 +44,6 @@ export const fetchData = page => async dispatch => {
     try {
         await axios.get(API_URL)
             .then(res => {
-                console.log('res.data.results:', res.data.results)
-
                 dispatch(datasuccess(res.data.results));
             })
     } catch (e) {
