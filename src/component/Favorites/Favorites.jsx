@@ -13,7 +13,7 @@ export const Favorites = $ =>{
 
    
     
-    return favorites.length ? <main>
+    return favorites?.length ? <main>
         {uniqueObject(favorites)?.map(movie=>{
          const { title, poster_path, vote_average, overview } = movie;
          return <div className="movie">
