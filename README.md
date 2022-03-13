@@ -1,4 +1,7 @@
-This is the basic music list website ReactJs, Redux, and @mui. For fetching movies-data  I have used [MOVIEDB](#https://api.themoviedb.org/3) API.
+This is the basic movie list website ReactJs, Redux, and @mui. 
+For getting movies-data, I have used [MOVIEDB](https://api.themoviedb.org/3) API.
+
+
 
 ## Table of contents
 
@@ -9,7 +12,7 @@ This is the basic music list website ReactJs, Redux, and @mui. For fetching movi
 
 ## Demo
 
-[Link](https://music-player-mehtab39.vercel.app)
+[Link](https://movies-list-mehtab39.vercel.app/)
 
 
 ## How to run the app
