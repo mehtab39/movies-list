@@ -27,17 +27,19 @@ function Snackbox({checked, setChecked}) {
     textAlign: 'center',
      position: 'sticky',
       bottom: 0, 
-      backgroundColor: 'white', 
-      width: '20%',
+       width: '20%',
        marginLeft: '40%', 
-       padding: '10px'
+       padding: '14px'
   }
 
   return (
     <React.Fragment>
       <div style={style}>
-        <Button color="secondary" onClick={handleWishList}>Add To Wishlist</Button>
-        <Button variant="outlined" color="error" onClick={handleRemove}>Remove</Button>
+        <Button  halfwidth="true"
+          variant="contained" 
+          color="primary" onClick={handleWishList}>Add To Wishlist</Button>
+        &nbsp;  &nbsp;<Button halfwidth="true"
+         variant="contained" color="error" onClick={handleRemove}>Remove</Button>
       </div>
     </React.Fragment>
   );

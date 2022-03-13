@@ -72,7 +72,7 @@ export const LandingPage = $ => {
                 })}
             </List>
         </InfiniteScroll>
-        {checked.length && <MainSnackBox checked={checked} setChecked={setChecked} />}
+        {checked.length!==0 && <MainSnackBox checked={checked} setChecked={setChecked} />}
         {error && <Error />}
     </>
     )
