@@ -41,7 +41,7 @@ export const LandingPage = $ => {
             loader={<h1 style={{ textAlign: 'center' }}>Loading...</h1>}
         >
             <List dense sx={{ width: '100%', bgcolor: 'background.paper' }}>
-                {[...new Set(data)].map((el, i) => {
+                {data?.map((el, i) => {
                     const labelId = `checkbox-list-secondary-label-${el.id}`;
                     return (
                         <ListItem
