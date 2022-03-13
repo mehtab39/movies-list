@@ -11,14 +11,12 @@ import Avatar from '@mui/material/Avatar';
 import InfiniteScroll from "react-infinite-scroll-component";
 import { Error } from "../Error/Error";
 import { MainSnackBox } from "../Snackbox/Snackbox";
-import { Button } from "@mui/material";
 
 export const LandingPage = $ => {
     const [page, setPage] = useState(1)
     const [checked, setChecked] = useState([]);
-    const { data, loading, error } = useSelector((state) => ({
+    const { data, error } = useSelector((state) => ({
         data: state.dataState.data,
-        loading: state.dataState.loading,
         error: state.dataState.error,
     }))
     const handleToggle = (value) => () => {
@@ -34,7 +32,7 @@ export const LandingPage = $ => {
     const dispatch = useDispatch()
     useEffect($ => {      
          dispatch(fetchData(page))    
-    }, [page])
+    }, [dispatch, page])
     return (<>
         <InfiniteScroll
             dataLength={data.length}

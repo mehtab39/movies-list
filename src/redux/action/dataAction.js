@@ -10,12 +10,6 @@ import {
 const API_KEY = "api_key=f92460e8b4e1160664337b9edd0ebf1b";
 const BASE_URL = "https://api.themoviedb.org/3";
 export const IMG_URL = "https://image.tmdb.org/t/p/w500";
-
-
-const image_url = axios.create({
-    baseURL: IMG_URL
-});
-
 export const datasuccess = data => {
     return {
         type: DATASUCCESS,

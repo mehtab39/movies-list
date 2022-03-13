@@ -1,9 +1,11 @@
 export const pushLocalStorage = (key, value) => {
   let data = JSON.parse(localStorage.getItem(key));
-  if (data == undefined) data = [];
+  if (!data) data = [];
     data.push(value);
-    localStorage.setItem(key, JSON.stringify([...new Set(data)]));
+    localStorage.setItem(key, JSON.stringify(data));
 };
+
+
 
 
 

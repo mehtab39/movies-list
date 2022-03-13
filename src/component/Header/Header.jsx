@@ -1,4 +1,4 @@
-import { AppBar, LinearProgress, Link, Toolbar, Typography } from "@mui/material"
+import { AppBar,  Link, Toolbar, Typography } from "@mui/material"
 
 
 export const Header = $ => {
