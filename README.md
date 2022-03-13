@@ -1,4 +1,4 @@
-This is the basic movie list website build using ReactJs, Redux, and @mui. 
+This is the basic movie list website developed using ReactJs, Redux, and @mui. 
 
 
 ## Table of contents
