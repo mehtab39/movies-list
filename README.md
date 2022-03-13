@@ -6,6 +6,7 @@ This is the basic movie list website ReactJs, Redux, and @mui.
 * [Demo](#demo)
 * [How to run the app](#how-to-run-the-app)
 * [Added Functionalities](#added-functionalities)
+* [APIs used](#apis-used)
 
 
 ## Demo
@@ -31,6 +32,7 @@ To run this application, you need to follow the following steps:
 * Fully responsive
 
 ## APIs used
-* [MOVIEDB](https://api.themoviedb.org/3)  (For getting data)
+
+* [MOVIEDB](https://api.themoviedb.org/3) (For getting data)
 * Local Storage for adding movies to wishlist
 * Toolbar, List, Checkbox, Avatar, SnackbarProvider, and  Tabs from @mui/material
