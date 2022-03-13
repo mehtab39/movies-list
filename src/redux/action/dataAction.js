@@ -48,6 +48,7 @@ export const fetchData = $ => async dispatch => {
     try {
         await movie_url.get()
             .then(res => {
+                console.log(res.data)
                 dispatch(datasuccess(res.data));
             })
     } catch (e) {
